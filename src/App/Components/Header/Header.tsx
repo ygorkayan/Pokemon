@@ -5,13 +5,17 @@ import Title from "../Title/Title";
 import Search from "../SearchIcon/Search";
 import CartIcon from "../CartIcon/CartIcon";
 
+interface IProps {
+  title: string;
+  amountProductInCart: number;
+}
 
-export default function Header() {
+export default function Header(props: IProps) {
   return (
     <Container>
-      <Title value="pokemon store"/>
+      <Title value={props.title} />
       <Search />
-      <CartIcon amountProduct={10} />
+      <CartIcon amountProduct={props.amountProductInCart} />
     </Container>
   );
 }

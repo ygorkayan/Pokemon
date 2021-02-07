@@ -1,20 +1,33 @@
-import { Product, Img, Name, Price, AreaTotal, T, Btn } from "./Style";
+import React from "react";
+import { Product, Name, Price, AreaTotal, T } from "./Style";
+import { IPokemon } from "../../Service/ProductApi";
+import { Button } from "../Btn/Btn";
 
-export function showProduct(photo: string, name: string, price: number) {
-  return (
-    <Product>
-      <Img src={photo} />
-      <Name>{name}</Name>
-      <Price>R$ {price}</Price>
-    </Product>
-  );
-}
-
-export function showTotal(total: number = 0) {
+function showTotal(total: number) {
   return (
     <AreaTotal>
       <T>Total(sem frete): R$ {total}</T>
-      <Btn>Ver Carrinho</Btn>
+      <Button width="140px" height="90px">Ver Carrinho</Button>
     </AreaTotal>
+  );
+}
+
+export function showProducts(products: IPokemon[], total: number) {
+  const cart = products.map((product) => {
+    const { photoFront, name, price } = product;
+    return (
+      <Product>
+        <img src={photoFront} />
+        <Name>{name}</Name>
+        <Price>R$ {price}</Price>
+      </Product>
+    );
+  });
+
+  return (
+    <React.Fragment>
+      {cart}
+      {showTotal(total)}
+    </React.Fragment>
   );
 }

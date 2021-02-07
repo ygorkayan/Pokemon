@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { Container } from "./Style";
-import { showProduct, showTotal } from "./Util";
-import { ProductContext } from "../../Context/Product/Product";
+import { Container, CartEmpty } from "./Style";
+import { showProducts } from "./Util";
+import { CartContext } from "../../Context/Cart/Cart";
 
 interface IProps {
   hidden: boolean;
@@ -9,15 +9,15 @@ interface IProps {
 }
 
 export default function CartSuspended(props: IProps) {
-  const { products } = useContext(ProductContext);
-  // {showProduct(products[0].photoFront, products[0].name, products[0].price)}
+  const { products, total } = useContext(CartContext);
+
   return (
     <Container onMouseOut={() => props.setHidden(true)} hidden={props.hidden}>
-      {showProduct(products[0].photoFront, products[0].name, products[0].price)}
-      {showProduct(products[0].photoFront, products[0].name, products[0].price)}
-      {showProduct(products[0].photoFront, products[0].name, products[0].price)}
-      
-      {showTotal(1000)}
+      {products.length ? (
+        showProducts(products, total())
+      ) : (
+        <CartEmpty>seu carrinho esta vazio</CartEmpty>
+      )}
     </Container>
   );
 }

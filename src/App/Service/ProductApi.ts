@@ -11,8 +11,8 @@ export interface IPokemon {
   price: number;
 }
 
-function extractInfo(pokemon: any): IPokemon {
-  const id = pokemon.id;
+function extractInfo(pokemon: any, indice: number): IPokemon {
+  const id = indice;
   const name = pokemon.name;
   const photoFront = pokemon.sprites.front_default;
   const photoBack = pokemon.sprites.back_default;
@@ -30,6 +30,6 @@ for (let i = 1; i <= 100; i++) {
 
 export default function searchProduct(): Promise<IPokemon[]> {
   return Promise.all(Pokemon).then((resp) =>
-    resp.map((value) => extractInfo(value.data))
+    resp.map((value, indice) => extractInfo(value.data, indice))
   );
 }

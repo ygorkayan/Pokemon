@@ -8,14 +8,21 @@ export const Container = styled.div`
   background-color: var(--white);
 `;
 
+export const CartEmpty = styled.div`
+  height: 80px;
+  font-size: 1.2rem;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Product = styled.div`
   color: black;
   display: flex;
   align-items: center;
   cursor: default;
 `;
-
-export const Img = styled.img``;
 
 export const Name = styled.p`
   font-size: 1rem;
@@ -41,13 +48,4 @@ export const AreaTotal = styled.div`
 
 export const T = styled.p`
   color: #707070;
-`;
-
-export const Btn = styled.button`
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  background-color: var(--red);
-  border: none;
-  color: var(--white);
-  cursor: pointer;
 `;
