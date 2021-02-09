@@ -20,7 +20,7 @@ export const Section = styled.div`
 
 export const TitleSection = styled.p`
   font-size: 1.7rem;
-  color: rgb(102, 102, 102);
+  color: var(--color);
   font-weight: 700;
   margin-top: 2rem;
   margin-left: 2rem;

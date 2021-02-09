@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const H1 = styled.h1`
-  color: var(--white);
+  color: #fff;
   text-transform: uppercase;
   text-decoration: overline underline;
 `;

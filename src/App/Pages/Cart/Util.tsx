@@ -26,7 +26,7 @@ export function Modal(
   }
   return (
     <ModalBuy hidden={modalVisible}>
-      <CheckCircleOutlineIcon htmlColor="var(--colorPrimary)" fontSize="large" />
+      <CheckCircleOutlineIcon htmlColor="var(--color)" fontSize="large" />
       <MsgBuy>Compra finalizada, obrigado por comprar</MsgBuy>
     </ModalBuy>
   );

@@ -5,14 +5,14 @@ export const Container = styled.div`
   top: 55px;
   position: absolute;
   width: 320px;
-  background-color: var(--white);
+  background-color: #fff;
   z-index: 100;
 `;
 
 export const CartEmpty = styled.div`
   height: 80px;
   font-size: 1.2rem;
-  color: var(--colorPrimary);
+  color: var(--color);
   display: flex;
   justify-content: center;
   align-items: center;

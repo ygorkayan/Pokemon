@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   cursor: pointer;
-  background-color: var(--white);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,12 +27,12 @@ export const Img = styled.img`
 
 export const Title = styled.h2`
   font-size: 1.2rem;
-  color: rgba(102, 102, 102, 0.9);
+  color: var(--color);
   text-transform: capitalize;
 `;
 
 export const Price = styled.p`
   font-weight: 700;
-  color: rgb(102, 102, 102);
+  color: var(--color);
   font-size: 1.1rem;
 `;

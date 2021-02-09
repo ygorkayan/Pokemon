@@ -4,7 +4,7 @@ Carrinho lateral (FEITO)
 
 Resumo do carrinho (FEITO)
 
-3 lojas com estilos e tipos diferentes de Pokémon
+3 lojas com estilos e tipos diferentes de Pokémon (FEITO)
 
 Barra de busca para filtrar os Pokémon (FEITO)
 

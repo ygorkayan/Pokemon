@@ -16,10 +16,12 @@ export const Input = styled.input`
   width: 500px;
   padding: 1rem;
   border: none;
+  font-size: 1.1rem;
+  color: var(--color);
 `;
 
 export const Icon = styled.div`
   cursor: pointer;
   margin-left: -2.5rem;
-  color: var(--colorPrimary);
+  color: var(--color);
 `;

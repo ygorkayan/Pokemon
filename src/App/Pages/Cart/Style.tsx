@@ -29,19 +29,19 @@ export const Total = styled.div`
 
 export const TotalTitle = styled.p`
   font-size: 1.6rem;
-  color: var(--gray);
+  color: var(--color);
 `;
 
 export const TotalPrice = styled.p`
   margin: 2rem 0px;
   font-weight: 700;
   font-size: 1.6rem;
-  color: var(--gray);
+  color: var(--color);
 `;
 
 export const Hr = styled.hr`
   border: none;
-  background-color: gray;
+  background-color: var(--color);
   height: 0.2px;
 `;
 
@@ -55,6 +55,10 @@ export const AreaBtn = styled.div`
   height: 150px;
 `;
 
+export const P = styled.p`
+  color: var(--color);
+`;
+
 export const AboutCart = styled.div`
   width: 68%;
 
@@ -66,7 +70,7 @@ export const AboutCart = styled.div`
 export const TitleProductInCart = styled.p`
   font-weight: 700;
   font-size: 1.6rem;
-  color: var(--gray);
+  color: var(--color);
   margin-left: 0.5rem;
 `;
 
@@ -110,7 +114,7 @@ export const ModalBuy = styled.div`
   width: 360px;
   height: 250px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 0.5rem;
 
   @media (max-width: 360px) {
@@ -121,6 +125,6 @@ export const ModalBuy = styled.div`
 `;
 
 export const MsgBuy = styled.p`
-  color: var(--gray);
+  color: var(--color);
   margin-top: 1rem;
 `;

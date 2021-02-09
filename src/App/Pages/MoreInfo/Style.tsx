@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const Product = styled.div`
   display: flex;
-  background-color: var(--white);
+  background-color: #fff;
   width: 68%;
   height: 100%;
   border-radius: 0.2rem;
@@ -55,7 +55,7 @@ export const ProductInfo = styled.div`
 
 export const Title = styled.p`
   font-size: 2rem;
-  color: var(--gray);
+  color: var(--color);
   text-transform: capitalize;
 `;
 
@@ -64,7 +64,7 @@ export const Buy = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
+  background-color: #fff;
   width: 30%;
   height: 100%;
   border-radius: 0.2rem;
@@ -79,12 +79,13 @@ export const Buy = styled.div`
 
 export const Price = styled.p`
   font-size: 3rem;
+  color: var(--color);
 `;
 
 export const Separator = styled.hr`
   width: 90%;
   border: none;
-  background-color: var(--gray);
+  background-color: var(--color);
   height: 0.2px;
   margin: 2rem 0px;
 `;

@@ -6,7 +6,7 @@ export const Container = styled.header`
   justify-content: center;
   padding: 1rem;
   height: 7rem;
-  background-color: var(--colorPrimary);
+  background-color: var(--color);
 
   @media (max-width: 1020px) {
     flex-direction: column;

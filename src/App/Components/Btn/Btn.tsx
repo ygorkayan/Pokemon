@@ -10,8 +10,8 @@ interface IProps {
 
 export const Button = styled.button<IProps>`
   cursor: pointer;
-  color: var(--white);
-  background-color: var(--colorPrimary);
+  color: #fff;
+  background-color: var(--color);
   border: none;
   text-transform: uppercase;
   width: ${(props) => props.width || "140px"};

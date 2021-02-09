@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+// #e60014
+// #0433ff
+
 export const StyleGlobal = createGlobalStyle`
   * {
     margin: 0px;
@@ -17,8 +20,6 @@ export const StyleGlobal = createGlobalStyle`
   }
 
   :root {
-    --colorPrimary: #e60014;
-    --white: #fff;
-    --gray: #e60014;
+    --color: #0433ff;
   }
 `;

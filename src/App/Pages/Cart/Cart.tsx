@@ -12,6 +12,7 @@ import {
   AreaBtn,
   AboutCart,
   TitleProductInCart,
+  P
 } from "./Style";
 
 export default function Cart() {
@@ -46,7 +47,7 @@ export default function Cart() {
             >
               finalizar compra
             </Btn>
-            possui cupom ou vale? você poderá usá-los na etapa de pagamento.
+            <P>possui cupom ou vale? você poderá usá-los na etapa de pagamento.</P>
           </AreaBtn>
         </Total>
       </Container>

@@ -5,7 +5,7 @@ function createStars(rate: number) {
   const Stars = [];
 
   for (let i = 0; i < rate; i++) {
-    Stars.push(<StarRateIcon key={Math.random()} htmlColor="var(--colorPrimary)" />);
+    Stars.push(<StarRateIcon key={Math.random()} htmlColor="var(--color)" />);
   }
 
   for (let i = 0; i < 5 - rate; i++) {
