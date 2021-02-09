@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const CartEmpty = styled.div`
   height: 80px;
   font-size: 1.2rem;
-  color: var(--gray);
+  color: var(--colorPrimary);
   display: flex;
   justify-content: center;
   align-items: center;
