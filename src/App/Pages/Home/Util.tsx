@@ -6,7 +6,9 @@ function showProducts(products: IPokemon[], show: number) {
   const pok = [];
   for (let i = 0; i < show; i++) {
     const aleatorio = Math.round(Math.random() * (100 - 0) + 0);
-    pok.push(<Card key={Math.random()} {...products[aleatorio]} />);
+    const product = products[aleatorio];
+    if (!product) continue;
+    pok.push(<Card key={Math.random()} {...product} />);
   }
   return pok;
 }

@@ -23,10 +23,10 @@ function showTotal(total: number) {
 }
 
 export function showProducts(products: IPokemon[], total: number) {
-  const cart = products.map((product) => {
+  const cart = products.map((product, indice) => {
     const { photoFront, name, price } = product;
     return (
-      <Product>
+      <Product key={indice}>
         <img src={photoFront} />
         <Name>{name}</Name>
         <Price>R$ {price}</Price>

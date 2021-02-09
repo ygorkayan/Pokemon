@@ -22,5 +22,4 @@ export const Icon = styled.div`
   cursor: pointer;
   margin-left: -2.5rem;
   color: var(--red);
-  z-index: 2;
 `;

@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  height: 620px;
   margin: 1rem auto 0px;
 
   @media (max-width: 1200px) {
@@ -14,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Total = styled.div`
+  margin-top: 2rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,6 @@ export const AreaBtn = styled.div`
 
 export const AboutCart = styled.div`
   width: 68%;
-  height: 620px;
 
   @media (max-width: 1020px) {
     width: 100vw;
@@ -68,6 +67,7 @@ export const TitleProductInCart = styled.p`
   font-weight: 700;
   font-size: 1.6rem;
   color: var(--gray);
+  margin-left: 0.5rem;
 `;
 
 export const ProductInCart = styled.div`
@@ -78,7 +78,7 @@ export const ProductInCart = styled.div`
   height: 90px;
 
   @media (max-width: 1020px) {
-    width: 100vw;
+    width: 90vw;
     margin-right: none;
     padding-right: 1rem;
   }
@@ -106,17 +106,12 @@ export const ModalBuy = styled.div`
   flex-direction: column;
   position: absolute;
   top: 200px;
-  left: 700px;
+  left: calc(50vw - 180px);
   width: 360px;
   height: 250px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--white);
   border-radius: 0.5rem;
-
-  @media (max-width: 1020px) {
-    top: calc(50vw - 250px);
-    left: calc(49vh - 360px);
-  }
 
   @media (max-width: 360px) {
     width: 100vw;

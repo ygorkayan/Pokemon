@@ -40,7 +40,7 @@ export function viwerProduct(
     const { photoFront, name, price } = product;
 
     return (
-      <React.Fragment>
+      <React.Fragment key={index}>
         <Hr />
         <ProductInCart>
           <InfoProduct>
