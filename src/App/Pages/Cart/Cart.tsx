@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Context/Cart/Cart";
 import { viwerProduct, Modal } from "./Util";
-import Header from "../../Components/Header/Header";
 import Btn from "../../Components/Btn/Btn";
 
 import {
@@ -17,13 +16,10 @@ import {
 
 export default function Cart() {
   const [modalVisible, setModalVisible] = useState(false);
-  const { products, length, total, removeProduct, removeAll } = useContext(
-    CartContext
-  );
+  const { products, total, removeProduct, removeAll } = useContext(CartContext);
 
   return (
     <React.Fragment>
-      <Header title="pokemon store" amountProductInCart={length} />
       {Modal(modalVisible, setModalVisible)}
       <Container>
         <AboutCart>
@@ -41,7 +37,7 @@ export default function Cart() {
           <AreaBtn>
             <Btn
               onClick={() => {
-                if (length === 0) return;
+                if (products.length === 0) return;
                 removeAll();
                 setModalVisible(true);
               }}

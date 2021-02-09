@@ -4,6 +4,7 @@ import { ProductProvider } from "./Context/Product/Product";
 import { CartProvider } from "./Context/Cart/Cart";
 import { SearchProvider } from "./Context/Search/Search";
 import { BrowserRouter } from "react-router-dom";
+import Header from "./Components/Header/Header";
 
 import Router from "./Router";
 
@@ -15,6 +16,7 @@ export default function App() {
         <CartProvider>
           <SearchProvider>
             <BrowserRouter>
+              <Header title="pokemon store" />
               <Router />
             </BrowserRouter>
           </SearchProvider>

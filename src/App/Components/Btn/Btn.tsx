@@ -16,7 +16,7 @@ export const Button = styled.button<IProps>`
   text-transform: uppercase;
   width: ${(props) => props.width || "140px"};
   height: ${(props) => props.height || "90px"};
-  margin-top: 1rem; // mudar
+  margin-top: 1rem;
 `;
 
 export default function Btn(props: IProps) {

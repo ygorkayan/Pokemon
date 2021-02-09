@@ -7,7 +7,7 @@ export const Products = styled.div`
   width: 70vw;
 
   @media (max-width: 500px) {
-    width: 100vw;
+    width: 95vw;
   }
 `;
 

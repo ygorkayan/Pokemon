@@ -7,7 +7,6 @@ import CartIcon from "../CartIcon/CartIcon";
 
 interface IProps {
   title: string;
-  amountProductInCart: number;
 }
 
 export default function Header(props: IProps) {
@@ -15,7 +14,7 @@ export default function Header(props: IProps) {
     <Container>
       <Title value={props.title} />
       <Search />
-      <CartIcon amountProduct={props.amountProductInCart} />
+      <CartIcon />
     </Container>
   );
 }

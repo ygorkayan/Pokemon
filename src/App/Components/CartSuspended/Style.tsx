@@ -6,6 +6,7 @@ export const Container = styled.div`
   position: absolute;
   width: 320px;
   background-color: var(--white);
+  z-index: 100;
 `;
 
 export const CartEmpty = styled.div`

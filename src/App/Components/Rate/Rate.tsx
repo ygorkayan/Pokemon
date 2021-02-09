@@ -1,7 +1,7 @@
 import React from "react";
 import StarRateIcon from "@material-ui/icons/StarRate";
 
-export function createStars(rate: number) {
+function createStars(rate: number) {
   const Stars = [];
 
   for (let i = 0; i < rate; i++) {

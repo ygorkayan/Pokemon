@@ -5,7 +5,6 @@ export interface ICart {
   addProduct: (newProduct: IPokemon) => void;
   removeProduct: (index: number) => void;
   removeAll: () => void;
-  length: number;
   total: () => number;
 }
 
@@ -14,7 +13,6 @@ export const stateInitial: ICart = {
   addProduct: (newProduct: IPokemon) => {},
   removeProduct: (index: number) => {},
   removeAll: () => {},
-  length: 0,
   total: () => {
     return 0;
   },

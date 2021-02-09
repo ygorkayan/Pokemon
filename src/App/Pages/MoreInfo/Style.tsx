@@ -4,8 +4,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 920px;
-  height: 395px;
   margin: 2rem auto 0px auto;
+
+  @media (max-width: 1200px) {
+    border-radius: none;
+    width: 720px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 720px) {
+    width: 100vw;
+  }
 `;
 
 export const Product = styled.div`
@@ -14,6 +23,16 @@ export const Product = styled.div`
   width: 68%;
   height: 100%;
   border-radius: 0.2rem;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 720px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const AreaImgs = styled.div`
@@ -49,6 +68,12 @@ export const Buy = styled.div`
   width: 30%;
   height: 100%;
   border-radius: 0.2rem;
+  padding-bottom: 1rem;
+
+  @media (max-width: 1200px) {
+    border-radius: none;
+    width: 100%;
+  }
 `;
 
 export const Price = styled.p`
@@ -61,15 +86,4 @@ export const Separator = styled.hr`
   background-color: var(--gray);
   height: 0.2px;
   margin: 2rem 0px;
-`;
-
-export const Btn = styled.button`
-  cursor: pointer;
-  margin-top: 1rem;
-  border: none;
-  width: 200px;
-  height: 50px;
-  color: var(--white);
-  background-color: var(--red);
-  text-transform: uppercase;
 `;

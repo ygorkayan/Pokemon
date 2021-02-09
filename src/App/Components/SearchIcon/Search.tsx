@@ -10,7 +10,6 @@ export default function Search() {
   return (
     <Container>
       <Input
-        autoFocus
         type="text"
         placeholder="Busque seu Pokemon"
         value={query}

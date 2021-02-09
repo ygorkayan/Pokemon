@@ -14,8 +14,6 @@ import Rate from "../../Components/Rate/Rate";
 import { useParams, Link } from "react-router-dom";
 import { CartContext } from "../../Context/Cart/Cart";
 import Btn from "../../Components/Btn/Btn";
-
-import Header from "../../Components/Header/Header";
 import { ProductContext } from "../../Context/Product/Product";
 
 export default function MoreInfo() {
@@ -26,7 +24,7 @@ export default function MoreInfo() {
   const [photoBack, setPhotoBack] = useState("");
 
   const { products } = useContext(ProductContext);
-  const { addProduct, length } = useContext(CartContext);
+  const { addProduct } = useContext(CartContext);
   const { id } = useParams<any>();
 
   useEffect(() => {
@@ -41,7 +39,6 @@ export default function MoreInfo() {
 
   return (
     <React.Fragment>
-      <Header title="pokemon store" amountProductInCart={length} />
       <Container>
         <Product key={id}>
           <AreaImgs>{createCarousel(photoFront, photoBack)}</AreaImgs>

@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { IPokemon } from "../../Service/ProductApi";
 import { Button } from "../Btn/Btn";
 
+export interface IProps {
+  hidden: boolean;
+  setHidden: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 function showTotal(total: number) {
   return (
     <AreaTotal>

@@ -23,7 +23,6 @@ export function CartProvider(props: any) {
     removeProduct: removeProduct(products, setProducts),
     total: total(products),
     removeAll: removeAll(setProducts),
-    length: products.length,
   };
 
   return (
