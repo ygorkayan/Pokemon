@@ -17,8 +17,8 @@ export const StyleGlobal = createGlobalStyle`
   }
 
   :root {
-    --red: #e60014;
+    --colorPrimary: #e60014;
     --white: #fff;
-    --gray: rgb(102, 102, 102);
+    --gray: #e60014;
   }
 `;

@@ -21,5 +21,5 @@ export const Input = styled.input`
 export const Icon = styled.div`
   cursor: pointer;
   margin-left: -2.5rem;
-  color: var(--red);
+  color: var(--colorPrimary);
 `;

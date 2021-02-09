@@ -11,7 +11,7 @@ interface IProps {
 export const Button = styled.button<IProps>`
   cursor: pointer;
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--colorPrimary);
   border: none;
   text-transform: uppercase;
   width: ${(props) => props.width || "140px"};
