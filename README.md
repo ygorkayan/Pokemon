@@ -1,3 +1,5 @@
+site -> http://pokemon.ygorkayan.com.br/
+
 https://github.com/b2wdigital/desafio-loja-pokemon/tree/pleno
 
 Catálogo de produtos (FEITO)
