@@ -4,6 +4,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   margin: 0px 5rem;
+
+  @media (max-width: 1020px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 export const Input = styled.input`
@@ -17,4 +22,5 @@ export const Icon = styled.div`
   cursor: pointer;
   margin-left: -2.5rem;
   color: var(--red);
+  z-index: 2;
 `;

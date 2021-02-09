@@ -18,19 +18,20 @@ export const CartEmpty = styled.div`
 `;
 
 export const Product = styled.div`
+  cursor: default;
   color: black;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  cursor: default;
+  margin-right: 3rem;
 `;
 
 export const Name = styled.p`
-  font-size: 1rem;
   color: rgba(102, 102, 102, 0.9);
+  text-transform: capitalize;
 `;
 
 export const Price = styled.p`
-  margin-left: 4rem;
   font-weight: 700;
   color: rgba(102, 102, 102);
 `;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Indicator } from "./Style";
+import { Link } from "react-router-dom";
 import CartIcon from "@material-ui/icons/ShoppingCart";
 import CartSuspended from "../CartSuspended/CartSuspended";
 
@@ -12,7 +13,9 @@ export default function Cart(props: IProps) {
   return (
     <Container onMouseOver={() => setHidden(false)}>
       <Indicator>{props.amountProduct}</Indicator>
-      <CartIcon fontSize="large" />
+      <Link to="/cart">
+        <CartIcon fontSize="large" htmlColor="#fff" />
+      </Link>
       <CartSuspended hidden={hidden} setHidden={setHidden} />
     </Container>
   );

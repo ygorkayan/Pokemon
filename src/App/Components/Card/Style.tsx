@@ -12,6 +12,11 @@ export const Container = styled.div`
   box-shadow: 0px 0px 3px rgba(102, 102, 102, 0.5);
   border-bottom: 2px solid rgba(102, 102, 102, 0.5);
   margin: 1rem;
+
+  @media (max-width: 500px) {
+    width: 300px;
+    align-items: center;
+  }
 `;
 
 export const Img = styled.img`

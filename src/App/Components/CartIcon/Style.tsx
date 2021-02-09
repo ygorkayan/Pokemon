@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Indicator = styled.div`
   position: absolute;
-  top: 0px;
+  top: -1px;
   font-size: 1rem;
   font-weight: 700;
 `;

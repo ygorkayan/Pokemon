@@ -6,8 +6,8 @@ export const Products = styled.div`
   margin: 0px auto;
   width: 70vw;
 
-  @media (max-width: 500px) {
-    width: 100vw;
+  @media (max-width: 1020px) {
+    width: 90vw;
   }
 `;
 
@@ -30,8 +30,4 @@ export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-  @media (max-width: 500px) {
-    justify-content: center;
-  }
 `;
