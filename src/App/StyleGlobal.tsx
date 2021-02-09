@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 // #e60014
-// #0433ff
+// #022adf
+// #4d1d78
 
 export const StyleGlobal = createGlobalStyle`
   * {
@@ -20,6 +21,6 @@ export const StyleGlobal = createGlobalStyle`
   }
 
   :root {
-    --color: #0433ff;
+    --color: #e60014;
   }
 `;

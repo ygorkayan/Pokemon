@@ -1,3 +1,5 @@
+https://github.com/b2wdigital/desafio-loja-pokemon/tree/pleno
+
 Catálogo de produtos (FEITO)
 
 Carrinho lateral (FEITO)
