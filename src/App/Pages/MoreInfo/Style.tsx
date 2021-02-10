@@ -17,6 +17,20 @@ export const Container = styled.div`
   }
 `;
 
+export const TitleAbilities = styled.h2`
+  margin: 1.5rem 0px 0.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color);
+`;
+
+export const AbilitiesName = styled.p`
+  color: var(--color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+`;
+
 export const Product = styled.div`
   display: flex;
   background-color: #fff;

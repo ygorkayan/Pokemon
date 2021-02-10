@@ -115,7 +115,6 @@ export const ModalBuy = styled.div`
   height: 250px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  border-radius: 0.5rem;
 
   @media (max-width: 360px) {
     width: 100vw;

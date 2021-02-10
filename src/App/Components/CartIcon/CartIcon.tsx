@@ -7,7 +7,10 @@ import CartSuspended from "../CartSuspended/CartSuspended";
 export default function Cart() {
   const [hidden, setHidden] = useState(true);
   return (
-    <Container onMouseOver={() => setHidden(false)}>
+    <Container
+      onMouseOver={() => setHidden(false)}
+      onClick={() => setHidden(!hidden)}
+    >
       <Link to="/cart">
         <CartIcon fontSize="large" htmlColor="#fff" />
       </Link>

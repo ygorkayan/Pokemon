@@ -12,7 +12,7 @@ import {
   AreaBtn,
   AboutCart,
   TitleProductInCart,
-  P
+  P,
 } from "./Style";
 
 export default function Cart() {
@@ -24,7 +24,12 @@ export default function Cart() {
       {Modal(modalVisible, setModalVisible)}
       <Container>
         <AboutCart>
-          <TitleProductInCart>produtos no seu carrinho</TitleProductInCart>
+          {products.length ? (
+            <TitleProductInCart>produtos no seu carrinho</TitleProductInCart>
+          ) : (
+            <TitleProductInCart>seu carrinho esta vazio</TitleProductInCart>
+          )}
+
           {viwerProduct(products, removeProduct)}
         </AboutCart>
 
@@ -47,7 +52,9 @@ export default function Cart() {
             >
               finalizar compra
             </Btn>
-            <P>possui cupom ou vale? você poderá usá-los na etapa de pagamento.</P>
+            <P>
+              possui cupom ou vale? você poderá usá-los na etapa de pagamento.
+            </P>
           </AreaBtn>
         </Total>
       </Container>

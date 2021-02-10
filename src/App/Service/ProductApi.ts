@@ -7,6 +7,7 @@ export interface IPokemon {
   name: string;
   photoFront: string;
   photoBack: string;
+  abilities: [];
   rate: number;
   price: number;
 }
@@ -16,10 +17,11 @@ function extractInfo(pokemon: any, indice: number): IPokemon {
   const name = pokemon.name;
   const photoFront = pokemon.sprites.front_default;
   const photoBack = pokemon.sprites.back_default;
+  const abilities = pokemon.abilities;
   const rate = Math.round(Math.random() * (5 - 1) + 1);
   const price = Math.round(Math.random() * (100 - 1) + 1);
 
-  return { id, name, photoFront, photoBack, rate, price };
+  return { id, name, photoFront, photoBack, abilities, rate, price };
 }
 
 const Pokemon: Promise<AxiosResponse>[] = [];

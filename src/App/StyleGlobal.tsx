@@ -1,10 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
-// #e60014
-// #022adf
-// #4d1d78
+interface Color {
+  color: string
+}
 
-export const StyleGlobal = createGlobalStyle`
+export const StyleGlobal = createGlobalStyle<Color>`
   * {
     margin: 0px;
     padding: 0px;
@@ -21,6 +21,6 @@ export const StyleGlobal = createGlobalStyle`
   }
 
   :root {
-    --color: #e60014;
+    --color: ${props => props.color};
   }
 `;

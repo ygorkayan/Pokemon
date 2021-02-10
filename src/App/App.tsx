@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleGlobal } from "./StyleGlobal";
 import { ProductProvider } from "./Context/Product/Product";
 import { CartProvider } from "./Context/Cart/Cart";
@@ -9,14 +9,16 @@ import Header from "./Components/Header/Header";
 import Router from "./Router";
 
 export default function App() {
+  const [color, setColor] = useState("#e60014");
+
   return (
     <React.Fragment>
-      <StyleGlobal />
+      <StyleGlobal color={color} />
       <ProductProvider>
         <CartProvider>
           <SearchProvider>
             <BrowserRouter>
-              <Header title="pokemon store" />
+              <Header title="pokemon store" setColor={setColor}/>
               <Router />
             </BrowserRouter>
           </SearchProvider>

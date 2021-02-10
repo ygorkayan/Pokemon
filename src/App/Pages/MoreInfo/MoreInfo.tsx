@@ -8,13 +8,15 @@ import {
   Buy,
   Price,
   Separator,
+  TitleAbilities,
 } from "./Style";
-import { createCarousel } from "./Util";
+import { createCarousel, takeAbilitie } from "./Util";
 import Rate from "../../Components/Rate/Rate";
 import { useParams, Link } from "react-router-dom";
 import { CartContext } from "../../Context/Cart/Cart";
 import Btn from "../../Components/Btn/Btn";
 import { ProductContext } from "../../Context/Product/Product";
+import { useHistory } from "react-router-dom";
 
 export default function MoreInfo() {
   const [name, setName] = useState("");
@@ -22,9 +24,11 @@ export default function MoreInfo() {
   const [price, setPrice] = useState(0);
   const [photoFront, setPhotoFront] = useState("");
   const [photoBack, setPhotoBack] = useState("");
+  const [abilities, setAbilities] = useState([]);
 
   const { products } = useContext(ProductContext);
   const { addProduct } = useContext(CartContext);
+  const History = useHistory();
   const { id } = useParams<any>();
 
   useEffect(() => {
@@ -34,6 +38,7 @@ export default function MoreInfo() {
       setPrice(products[id].price);
       setPhotoFront(products[id].photoFront);
       setPhotoBack(products[id].photoBack);
+      setAbilities(products[id].abilities);
     } catch {}
   }, [products, id]);
 
@@ -46,6 +51,8 @@ export default function MoreInfo() {
           <ProductInfo>
             <Title>{name}</Title>
             <Rate stars={rate} />
+            <TitleAbilities>Abilidades</TitleAbilities>
+            {takeAbilitie(abilities)}
           </ProductInfo>
         </Product>
 
@@ -55,9 +62,10 @@ export default function MoreInfo() {
           <Btn
             width="220px"
             height="60px"
-            onClick={() =>
-              addProduct({ id, name, price, rate, photoFront, photoBack })
-            }
+            onClick={() => {
+              addProduct(products[id]);
+              History.push("/");
+            }}
           >
             Adicionar Ao Carrinho
           </Btn>

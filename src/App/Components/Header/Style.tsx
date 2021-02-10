@@ -14,3 +14,10 @@ export const Container = styled.header`
     justify-content: space-between;
   }
 `;
+
+export const Icons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+`;
