@@ -1,6 +1,14 @@
 site -> http://pokemon.ygorkayan.com.br/
-
 https://github.com/b2wdigital/desafio-loja-pokemon/tree/pleno
+
+tecnologia Usadas
+  - React
+  - React Router Dom
+  - TypeScript
+  - Material-ui (Parte de Icons)
+  - Styled Components
+  - React Responsive Carousel
+  - Axios
 
 Catálogo de produtos (FEITO)
 
@@ -19,4 +27,4 @@ Modal de obrigado ao finalizar compra (FEITO)
 Salvar os dados da compra do usuário localmente para não perdê-las ao atualizar a página (FEITO)
 
 Uma página com mais detalhes do Pokémon, tendo informações como os tipos, movimentos, pontos fracos e pontos fortes. Dessa forma o usuário poderá navegar para essa página e adicionar o Pokémon no carrinho ou voltar para o catálogo.
-(FEITO)
+(FEITO PARCIAL)
