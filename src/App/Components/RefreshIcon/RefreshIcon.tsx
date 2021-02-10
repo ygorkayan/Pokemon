@@ -9,10 +9,6 @@ interface IProps {
 const Temp = styled.div`
   cursor: pointer;
   transition-duration: 1s;
-
-  &:hover {
-    transform: rotate(60deg);
-  }
 `;
 
 export default function Icon(props: IProps) {
