@@ -11,6 +11,9 @@ tecnologia Usadas
   - React Responsive Carousel
   - Axios
 
+
+# Feitos
+
 Catálogo de produtos (FEITO)
 
 Carrinho lateral (FEITO)
