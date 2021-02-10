@@ -8,14 +8,13 @@ interface IProps {
 
 const Temp = styled.div`
   cursor: pointer;
-  transition-duration: 1s;
 `;
 
 export default function Icon(props: IProps) {
   const [flag, setFlag] = useState(0);
 
   function selectColor() {
-    const colors = ["#e60014", "#022adf", "#4d1d78"];
+    const colors = ["#022adf", "#4d1d78", "#e60014"];
 
     if (flag + 1 < colors.length) {
       setFlag(flag + 1);
